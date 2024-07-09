@@ -38,7 +38,10 @@ class Deck {
   deck: Card[] = [];
   discardPile: Card[] = [];
   
+
+  // add discard method to reshuffle once deck is completed
   draw () : Card {
+    // add to.string to this class 
     // remove first card from deck then return it
     // array.prototype.shift()
     if (this.deck.length === 0) throw new Error("No cards left in the deck");
